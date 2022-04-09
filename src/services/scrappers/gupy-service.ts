@@ -20,7 +20,7 @@ export function startProcess(data: string): JobType[] {
 
     const scrappedJobs: JobType[] = [];
     
-    jobsTable.each( (index: number, element: any) => {
+    jobsTable.each( (_index: number, element: any) => {
         console.log(element.text())
     })
 

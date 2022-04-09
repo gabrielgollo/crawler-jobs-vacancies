@@ -14,19 +14,18 @@ console.log('Starting Cron job');
 
 async function startCrawlers(): Promise<void> {
     try {
-        const dados = await crawlerCiandT.startProcess();
+        const dadosCompanyCiandT = await crawlerCiandT.startProcess();
 
-        //const dados2 = await crawlerGupy.startProcess();
-        console.info(dados);
+        console.info(dadosCompanyCiandT);
 
         const queueService = new QueueService()
-        await queueService.sendMessage(JSON.stringify(dados))
+        await queueService.sendMessage(JSON.stringify(dadosCompanyCiandT))
     } catch (error) {
         console.log(error)
     }
 }
 
-const job = new CronJob('*/1 * * * *', function() {
+const job = new CronJob('*/1 * * * *', (): void => {
     console.log('Starting Crawler');
     startCrawlers();
 });

@@ -13,3 +13,8 @@ This will be integrated with others projects by using RabbitMQ
 ![](https://i.imgur.com/kSxS4kJ_d.webp?maxwidth=760&fidelity=grand)
 
 Based in this diagram, it'll be integrated with other project that consumes the same queue and should have a logic to emit a message to a notify project.
+
+
+## Example of running in Docker
+![](https://i.imgur.com/05QAEUv.png)
+Attention: All of these logs will be removed, so be patient!

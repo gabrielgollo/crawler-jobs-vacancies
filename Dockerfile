@@ -1,6 +1,6 @@
 FROM node:16.13
 
-WORKDIR /opt/crawler-jobs
+WORKDIR /opt/crawler-jobs-vacancies
 
 COPY package*.json ./
 
