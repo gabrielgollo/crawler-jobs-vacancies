@@ -1,0 +1,23 @@
+{
+  "name": "crawler-job-vacancies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "start": "npx ts-node app.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10",
+    "cron": "^1.8.2",
+    "dotenv": "^16.0.0",
+    "ts-node": "^10.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "typescript": "^4.6.3"
+  }
+}
